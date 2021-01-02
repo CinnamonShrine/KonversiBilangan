@@ -10,5 +10,10 @@ import java.util.Scanner;
  * @author Arif
  */
 public class dectobin_bintodec {
-    
+    void decimalToBiner(int a){
+        if (a>1){
+            decimalToBiner(a/2);
+        }
+        System.out.print(a%2);
+    }
 }
