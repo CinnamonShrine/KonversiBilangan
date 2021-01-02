@@ -16,4 +16,22 @@ public class dectobin_bintodec {
         }
         System.out.print(a%2);
     }
+    
+    String binerToDecimal(String bilangan){
+        String[] binerReverse = new String[bilangan.length()];
+        double resultDecimal = 0;
+        //reverse
+        int n = 0;
+        for (int i = bilangan.length() - 1; i >= 0; i--){
+            binerReverse[n] = String.valueOf(bilangan.charAt(i));
+            n++;
+        }
+        //pangkatkan
+        for (int i = 0; i < binerReverse.length; i++) {
+        if (Integer.parseInt(binerReverse[i]) == 1) {
+            resultDecimal += Math.pow(2, i);
+            }
+        }
+        return String.valueOf(resultDecimal);
+    }
 }
