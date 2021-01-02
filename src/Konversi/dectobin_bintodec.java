@@ -34,4 +34,13 @@ public class dectobin_bintodec {
         }
         return String.valueOf(resultDecimal);
     }
+    
+    public static void main(String[] args) {
+        dectobin_bintodec bd = new dectobin_bintodec();
+        System.out.println("==== Konversi Bilangan ====");
+        System.out.println(" 1. Desimal ke Biner\n 2. Biner ke Desimal\n");
+        System.out.print("Masukkan Pilihan: ");
+        Scanner input = new Scanner(System.in);
+    }
+    
 }
